@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.6.4/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.6.4/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.6.4/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.6.4/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.6.4/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.6.4/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.6.4/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.6.4/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.6.4/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.6.4/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <link rel="stylesheet" type="text/css" href="./login_frontend/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./login_frontend/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="./login_frontend/css/iofrm-style.css">
+    <link rel="stylesheet" type="text/css" href="./login_frontend/css/iofrm-theme6.css">
+
+  </head>
+  <body>
+
+    <!-- Login form -->
+
+    <div class="form-body">
+      <div class="website-logo">
+          <a href="index.html">
+              <div class="logo">
+                  <img class="logo-size" src="./login_frontend/images/logo-light.svg" alt="">
+              </div>
+          </a>
+      </div>
+      <div class="row">
+          <div class="img-holder">
+              <div class="bg"></div>
+              <div class="info-holder">
+                  <img src="./login_frontend/images/graphic2.svg" alt="">
+              </div>
+          </div>
+          <div class="form-holder">
+              <div class="form-content">
+                  <div class="form-items">
+                      <h2 style="font-weight: bolder;">Welcome to Islamia Engeneering College.</h2>
+                      <p> <h5> An attempt to digitalize in a digital age. </h5></p>
+                      <div class="page-links">
+                          <a href="./loginfrontend/login6.html" class="active">Login</a><a href="./loginfrontend/register6.html">Register</a>
+                      </div>
+                      <form>
+                          <input class="form-control" type="tel" name="phone_no" placeholder="Phone Number" onblur="get_usr_phn()" required>
+                          <!-- <input class="form-control" type="password" name="password" placeholder="One-Time Password" required> -->
+                          <div class="form-button">
+                              <button id="submit" type="submit" class="ibtn" onclick="get_usr_phn()" > <a href="./login_frontend/otpreq.html" style="text-decoration: none;"> Request OTP </a></button>
+                          </div>
+                      </form>
+                      <div class="other-links">
+                          <span>Or login with</span><a href="#" class="google-login-btn">Google</a><a href="#">Linkedin</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+      <!-- <button class="google-login-btn">
+       <h4> Login with Google </h4>
+      </button>
+
+      <button class="phone-login-btn">
+        <h4> Login with Phone </h4>
+       </button> -->
+
+    
+    <script src="./login_frontend/js/jquery.min.js"></script>
+    <script src="./login_frontend/js/popper.min.js"></script>
+    <script src="./login_frontend/js/bootstrap.min.js"></script>
+    <script src="./login_frontend/js/main.js"></script>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
